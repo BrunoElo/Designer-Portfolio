@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--bootstrap cdn-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--jquery, popper.js, bootstrap.bundle.min.js(includes popper.js)-->
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js" defer></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js" defer></script>
+    <!--jquery, popper.js, bootstrap.js-->
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a id="brand-icon" class="navbar-brand" href="#"><svg width="56" height="24" viewBox="0 0 56 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.5 1C5.6167 1 0 6.16826 0 12.5C0 18.8326 5.61768 24 12.5 24C19.3833 24 25 18.8317 25 12.5C25 6.16736 19.3823 1 12.5 1ZM12.5 22.6523C6.41519 22.6523 1.46484 18.098 1.46484 12.5C1.46484 6.90197 6.41519 2.34766 12.5 2.34766C18.5848 2.34766 23.5352 6.90197 23.5352 12.5C23.5352 18.098 18.5848 22.6523 12.5 22.6523Z"
+                    fill="#111F4D" />
+                <g clip-path="url(#clip0)">
+                    <path
+                        d="M9.76562 2.48389C4.38805 2.48389 0 6.65184 0 11.7581C0 16.865 4.38881 21.0323 9.76562 21.0323C15.1432 21.0323 19.5312 16.8643 19.5312 11.7581C19.5312 6.65112 15.1424 2.48389 9.76562 2.48389ZM9.76562 19.9455C5.01186 19.9455 1.14441 16.2726 1.14441 11.7581C1.14441 7.24354 5.01186 3.57071 9.76562 3.57071C14.5194 3.57071 18.3868 7.24354 18.3868 11.7581C18.3868 16.2726 14.5194 19.9455 9.76562 19.9455Z"
+                        fill="#111F4D" />
+                    <ellipse cx="8.20312" cy="12.5001" rx="4.29688" ry="4.08065" fill="#E43A19" />
+                </g>
+                <path
+                    d="M36.5321 18L33.8761 13.44H32.1161V18H30.6601V6.848H34.2601C35.1028 6.848 35.8121 6.992 36.3881 7.28C36.9748 7.568 37.4121 7.95733 37.7001 8.448C37.9881 8.93867 38.1321 9.49867 38.1321 10.128C38.1321 10.896 37.9081 11.5733 37.4601 12.16C37.0228 12.7467 36.3615 13.136 35.4761 13.328L38.2761 18H36.5321ZM32.1161 12.272H34.2601C35.0495 12.272 35.6415 12.08 36.0361 11.696C36.4308 11.3013 36.6281 10.7787 36.6281 10.128C36.6281 9.46667 36.4308 8.95467 36.0361 8.592C35.6521 8.22933 35.0601 8.048 34.2601 8.048H32.1161V12.272ZM55.2105 6.848L51.9785 18H50.3465L47.7545 9.024L45.0665 18L43.4505 18.016L40.3305 6.848H41.8825L44.3145 16.304L47.0025 6.848H48.6345L51.1945 16.272L53.6425 6.848H55.2105Z"
+                    fill="#111F4D" />
+                <defs>
+                    <clipPath id="clip0">
+                        <rect width="19.5312" height="18.5484" fill="white" transform="translate(0 2.48389)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                </li>
+            </ul>
+            <button class="btn navbar-btn" type="button">Contact</button>
+            <button class="btn navbar-btn" type="button">Hire Me</button>
+
+        </div>
+    </nav>
+    <!--navbar-->
+    <div class="hero d-flex justify-content-end">
+        <div class="container-fluid">
+            <h4>Hi!</h4>
+            <h2>I'm Rebecca Wook</h2>
+            <h4>UI/UX Designer</h4>
+            <p>I create exceptional experiences that aligns your companies strategy with your customer needs. I help
+                founders and their businesses craft excellent user experiences.</p>
+            <p>Email:<br>rebeccawook@gmail.com</p>
+            <p>Behance<br>behance.net/rebecca</p>
+            <button class="btn navbar-btn hero-btn" type="button">Hire Me</button>
+        </div>
+        <img src="img/ladysmile.png" alt="smiling lady">
+    </div>
+    <div class="services">
+        <div class="service">
+            <svg class="checks" width="24px" height="24px" fill="#052049" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path
+                    d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" />
+            </svg>
+            <p>UI/UX Designer<br>
+                Creative websites for you</p>
+            <svg class="chevright" width="24px" height="24px" fill="rgba(17, 31, 77, 0.4)"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <path
+                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+            </svg>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

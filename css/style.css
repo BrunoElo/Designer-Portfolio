@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #111F4D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-btn {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar-btn:first-of-type {
+    border: 1px solid #E43A19;
+    color: #E43A19;
+}
+
+.navbar-btn:last-of-type {
+    color: white;
+    background-color: #E43A19;
+}
+
+.hero {
+    background-color: #111F4D;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 73px;
+    
+}
+
+h4, .hero p{
+    font-weight: 300;
+}
+h2 {
+    font-weight: 600;
+}
+h4:last-of-type {
+    font-weight: 500;
+}
+
+.hero p:nth-of-type(2), .hero p:nth-of-type(3), .hero img{
+    display: none;
+}
+
+.service {
+    width: 337px;
+    height: 99px;
+    background: #F2F4F7;
+    box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    color: #111F4D;
+    padding: 20px 24px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    #brand-icon {
+        margin-left: 140px;
+    }
+    .navbar-btn {
+    margin-right: 20px;
+}
+    .nav-item {
+        margin-right: 30px;
+    }
+    .container-fluid  {
+    margin-left: 140px;
+    align-self: center;
+}
+.hero p:nth-of-type(1) {
+   margin-top: 24px;
+   width: 608px;
+}
+.hero p:nth-of-type(2) {
+    display: inline-block;
+    margin-right: 67px;
+}
+.hero p:nth-of-type(3) {
+    display: inline-block;
+}
+.hero-btn {
+    margin-top: 24px;
+    width: 104px;
+    height: 37px;
+}
+.hero img{
+    display: initial;
+}
+#navbarSupportedContent {
+    padding-right: 100px;
+}
+.services {
+    margin: 32px 140px;
+}
+}

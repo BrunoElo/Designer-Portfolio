@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;
+    background-color: #F2F4F7;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -54,13 +54,122 @@ h4:last-of-type {
     background: #F2F4F7;
     box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
     border-radius: 8px;
-    text-align: center;
     color: #111F4D;
     padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.service p span {
+    font-weight: 500;
+}
+
+.service svg {
+    align-self: center;
+    
+}
+
+.services {
+    margin: 32px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service {
+    margin-bottom: 16px;
 }
 
 
 
+#about, #skills {
+    margin: auto 17px 50px;
+}
+
+#about hr, #skills hr {
+    width: 38px;
+    border: 1px solid #E43A19;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+#about h6, #skills h6{
+    display: inline-block;
+    color: #E43A19;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#about h5, #skills h5 {
+    font-size: 18px;
+    color: #111F4D;
+}
+
+
+#about p, #skills p {
+    color: #020205;
+    font-size: 15px;
+}
+
+.rating {
+    width: 339px;
+    margin: auto 18px;
+    }
+    .progress {
+        height: 8px;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .progress-bar {
+        border-radius: 8px;
+    }
+
+.skillbox .item {
+    text-align: center;
+    padding: 40px;
+}
+.skillbox h6 {
+    margin-top: 20px;
+}
+.skillbox {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+    width: 237px;
+    height:194px;
+    background-color: #F2F4F7;
+    margin: 25px;
+    box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+    border-radius: 8px;
+}
+
+.credits {
+    background-color: #111F4D;
+    color: #F2F4F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: ;
+}
+
+.cred {
+width: 120px;
+text-align: center;
+margin: 40px;
+}
+
+.cred span {
+    display: block;
+    font-weight: 300;
+    margin-top: 15px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -99,7 +208,76 @@ h4:last-of-type {
 #navbarSupportedContent {
     padding-right: 100px;
 }
+.hero {
+    padding-bottom: 0px;
+    
+}
 .services {
     margin: 32px 140px;
+    justify-content: space-between;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 32px 140px;
+}
+.about img {
+    width: 547px;
+    height: 502px;
+}
+#about, #skills {
+    width: 449px;
+    align-self: center;
+    margin: 0;
+    margin-left: 73px;
+}
+#skills {
+    margin-left: 0px;
+}
+#about h5, #skills h5 {
+    font-size: 32px;
+    color: #111F4D;
+    font-weight: bold;
+}
+.sectitle {
+    transform: rotate(-90deg);
+    position: relative;
+    right: 250px;
+    bottom: 100px;
+}
+.rating {
+width: 378px;
+margin: 0px;
+}
+.talent {
+    margin: auto 140px 107px;
+    display: flex;
+}
+.talentskills {
+
+}
+.skillbox {
+  justify-content: flex-end;
+}
+.item {
+    width: 237px;
+    height:194px;
+    background-color: #F2F4F7;
+    margin: 0px;
+    box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
+    border-radius: 8px;
+}
+.skillbox .item:nth-of-type(2) {
+    margin : 18px 0px 18px 18px;
+}
+.skillbox .item:nth-of-type(3) {
+    margin-top: -18px;
+}
+.skillbox .item:nth-of-type(4) {
+    margin-left : 18px;
+}
+.credits {
+    padding: 84px 250px;
 }
 }

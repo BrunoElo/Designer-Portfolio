@@ -87,11 +87,11 @@ h4:last-of-type {
 
 
 
-#about, #skills, #projects, #clients {
+#about, #skills, #projects, #clients, #testimonials, #contact {
     margin: auto 17px 50px;
 }
 
-#about hr, #skills hr, #projects hr, #clients hr {
+#about hr, #skills hr, #projects hr, #clients hr, #testimonials hr, #contact hr {
     width: 38px;
     border: 1px solid #E43A19;
     display: inline-block;
@@ -99,20 +99,20 @@ h4:last-of-type {
     top: 10px;
 }
 
-#about h6, #skills h6, #projects h6, #clients h6{
+#about h6, #skills h6, #projects h6, #clients h6, #testimonials h6, #contact h6{
     display: inline-block;
     color: #E43A19;
     font-weight: 300;
     font-size: 16px;
 }
 
-#about h5, #skills h5, #projects h5, #clients h5 {
+#about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
     font-size: 18px;
     color: #111F4D;
 }
 
 
-#about p, #skills p, #projects p, #clients p {
+#about p, #skills p, #projects p, #clients p, #testimonials p, #contact p {
     color: #020205;
     font-size: 15px;
 }
@@ -171,20 +171,76 @@ margin: 40px;
     margin-top: 15px;
 }
 
-
-/*vertically centers images if not full*/
-.middler {
-    padding-top: 40px;
-}
 /*slider container*/
 .container {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
+.hire {
+    background-color: #111F4D;
+    color: #F2F4F7;
+    padding: 61px 23px;
+    text-align: center;
+}
+.hire p {
+    font-size: 12px;
+}
+
+.testimonials .slide {
+    background-color: #111F4D;
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+}
+.testimonials .slide span {
+    color: #E43A19;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    display: block;
+}
+
+.contact svg {
+    margin-right: 16px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputstyle {
+width: 350px;
+height: 50px;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    padding: 13px 16px;
+    margin: 10px;
+    background-color: transparent;
+}
+
+textarea {
+    width: 350px;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+    padding: 13px 16px;
+    margin: 10px;
+    background-color: transparent;
+}
+
+footer {
+    background-color: #111F4D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 24px;
+    font-size: 7px;
+}
 
 
-
+/*********MEDIA QUERY*********/
 
 @media screen and (min-width: 768px) {
     #brand-icon {
@@ -240,19 +296,19 @@ margin: 40px;
     width: 547px;
     height: 502px;
 }
-#about, #skills, #projects, #clients {
+#about, #skills, #projects, #clients, #testimonials {
     width: 449px;
     align-self: center;
     margin: 0;
     margin-left: 73px;
 }
-#projects, #clients {
+#projects, #clients, #testimonials {
     margin-left: 140px;
 }
-#skills {
+#skills, #contact {
     margin-left: 0px;
 }
-#about h5, #skills h5, #projects h5, #clients h5 {
+#about h5, #skills h5, #projects h5, #clients h5, #testimonials h5, #contact h5 {
     font-size: 32px;
     color: #111F4D;
     font-weight: bold;
@@ -263,7 +319,7 @@ margin: 40px;
     right: 250px;
     bottom: 74px;
 }
-#skills .sectitle, #projects .sectitle, #clients .sectitle {
+#skills .sectitle, #projects .sectitle, #clients .sectitle, #testimonials .sectitle{
     bottom: 90px;
 }
 .rating {
@@ -326,10 +382,37 @@ margin: 0px;
 .sample:nth-of-type(6) {
     grid-row: 2/4;
 }
+.hire {
+    background-color: #111F4D;
+    color: #F2F4F7;
+    padding: 106px;
+    text-align: center;
+}
+.hire h6 {
+    font-size: 32px;
+    
+}
+.hire p {
+    font-size: 16px;
+}
+.contact {
+    margin: auto 140px;
+}
+.contactform {
+    margin-top: 40px;
+}
 
 
+#contact {
+    width: 449px;
+    margin: 0;
+}
 
-
+footer {
+    padding: 23px;
+    margin-top: 120px;
+    font-size: 12px;
+}
 }
 
 

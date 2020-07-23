@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer Portfolio</title>
     <!--bootstrap cdn-->
+    <link rel="icon" type="image/x-icon'/" href="img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/simple-lightbox.css">
 
-    <!--jquery, popper.js, bootstrap.bundle.min.js(includes popper.js)-->
-    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js" defer></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js" defer></script>
-    <!--jquery, popper.js, bootstrap.js-->
-    <script type="text/javascript" src="js/script.js" defer></script>
-    <script type="text/javascript" src="js/slick.min.js" defer></script>
+    <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
 </head>
 
 <body>
@@ -70,17 +67,40 @@
     </nav>
     <!--navbar-->
     <div class="hero d-flex justify-content-end">
+        <div id="particles-js"></div>
         <div class="container-fluid">
             <h4>Hi!</h4>
-            <h2>I'm Rebecca Wook</h2>
-            <h4>UI/UX Designer</h4>
+            <h2 style="width: 320px;">
+                <!--I'm Rebecca Wook--><span class="type"></span></h2>
+            <h4 class="type-two"></h4>
+
+            <script type="text/javascript" src="js/typed.min.js"></script>
+            <script type="text/javascript">
+                // Typed.js plugin
+                var typed = new Typed(".type", {
+                    strings: ["I'm Rebecca Wook ^1000\n  "],
+                    typeSpeed: 60,
+                    backSpeed: 60,
+                    backDelay: 3000,
+                    loop: true
+                });
+                var typed = new Typed(".type-two", {
+                    strings: ["UI/UX Designer"],
+                    typeSpeed: 60,
+                    backSpeed: 100,
+                    startDelay: 1000,
+                    backDelay: 2000,
+                    loop: true,
+                    showCursor: false
+                });
+            </script>
             <p>I create exceptional experiences that aligns your companies strategy with your customer needs. I help
                 founders and their businesses craft excellent user experiences.</p>
-            <p>Email:<br>rebeccawook@gmail.com</p>
-            <p>Behance<br>behance.net/rebecca</p>
+            <p><span>Email</span>:<br>rebeccawook@gmail.com</p>
+            <p><span>Behance</span><br>behance.net/rebecca</p>
             <button class="btn navbar-btn hero-btn" type="button">Hire Me</button>
         </div>
-        <img src="img/ladysmile.png" alt="smiling lady">
+        <img style="z-index: 1;" class="img-fluid" src="img/ladysmile.png" alt="smiling lady">
     </div>
     <div class="services">
         <div class="service">
@@ -127,7 +147,7 @@
         </div>
     </div>
     <div class="about">
-        <img src="img/ladysmilefull.png" class="mx-auto d-block" alt="smiling lady">
+        <img src="img/ladysmilefulldesktop.png" class="img-fluid mx-auto d-block" alt="smiling lady">
         <div id="about">
             <div class="sectitle">
                 <hr>
@@ -149,29 +169,29 @@
                     <h6>My skills</h6>
                 </div>
                 <h5>What My Design Skills Include</h5>
-                <p>I provide a range of services inUI/UX Design: creative, technical and analytical solutions for your
+                <p>I provide a range of services in UI/UX Design: creative, technical and analytical solutions for your
                     buisness.
                     From analysis to the development of solutions of any complexity.
             </div>
             <div class="rating">
                 <p>User Experience</p>
                 <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 88%" aria-valuenow="100"
+                    <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="100"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>User Interface</p>
                 <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 56%" aria-valuenow="100"
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>Web Development</p>
                 <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="100"
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="100"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>3D Modelling</p>
                 <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 68%" aria-valuenow="100"
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="100"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
@@ -210,28 +230,8 @@
                 </svg>
                 <h6>User Experience</h6>
             </div>
-            <div class="item"><svg xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61"
-                    fill="none">
-                    <ellipse cx="31.2792" cy="30.3855" rx="31.2792" ry="30.3855" fill="#111F4D" />
-                    <g clip-path="url(#clip0)">
-                        <path
-                            d="M36.9702 44.1022H34.1049L33.6829 38.5269H28.317L27.8951 44.1022H25.0298C24.5057 44.1022 24.0808 44.527 24.0808 45.0512C24.0808 45.5753 24.5057 46 25.0298 46H36.9702C37.4943 46 37.9191 45.5752 37.9191 45.0511C37.9191 44.527 37.4943 44.1022 36.9702 44.1022Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M40.3705 19.427V27.397C40.3705 27.7083 40.218 27.9999 39.9624 28.177L31.5409 34.0156C31.2285 34.2305 30.8076 34.2603 30.4484 34.008L22.0376 28.177C21.7821 27.9999 21.6296 27.7082 21.6296 27.397V19.427H17.7895C17.2654 19.427 16.8406 19.8518 16.8406 20.376V35.6798C16.8406 36.2039 17.2654 36.6288 17.7895 36.6288C18.4346 36.6288 44.5298 36.6288 44.2105 36.6288C44.7346 36.6288 45.1595 36.2039 45.1595 35.6798V20.376C45.1595 19.8518 44.7346 19.427 44.2105 19.427H40.3705Z"
-                            fill="#F2F4F7" />
-                        <path d="M30.051 31.4234V24.8142L23.5274 20.2915V26.9008L30.051 31.4234Z" fill="#F2F4F7" />
-                        <path d="M31.949 31.423L38.4726 26.9004V20.2905L31.949 24.8132V31.423Z" fill="#F2F4F7" />
-                        <path
-                            d="M31 23.162L37.7558 18.478C37.7558 18.478 31.5242 14.1574 31.5407 14.1688C31.2155 13.9434 30.7845 13.9434 30.4593 14.1688L24.2442 18.478L31 23.162Z"
-                            fill="#F2F4F7" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="32" height="32" fill="white" transform="translate(15 14)" />
-                        </clipPath>
-                    </defs>
-                </svg>
+            <div class="item"><img src="img/UI.png" alt="UI icon">
+
                 <h6>User Interface</h6>
             </div>
             <div class="item"><svg width="63" height="61" viewBox="0 0 63 61" fill="none"
@@ -246,69 +246,13 @@
                 </svg>
                 <h6>Web Development</h6>
             </div>
-            <div class="item"><svg width="63" height="61" viewBox="0 0 63 61" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="31.2792" cy="30.3855" rx="31.2792" ry="30.3855" fill="#111F4D" />
-                    <g clip-path="url(#clip0)">
-                        <path
-                            d="M20.724 38.3905L18.348 40.7665C18.1293 40.7078 17.904 40.6665 17.6667 40.6665C16.196 40.6665 15 41.8625 15 43.3332C15 44.8038 16.196 45.9998 17.6667 45.9998C19.1373 45.9998 20.3333 44.8038 20.3333 43.3332C20.3333 43.0958 20.292 42.8705 20.2333 42.6518L22.6093 40.2758C23.1307 39.7545 23.1307 38.9118 22.6093 38.3905C22.088 37.8692 21.2453 37.8692 20.724 38.3905Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M31 14C29.5293 14 28.3333 15.196 28.3333 16.6667C28.3333 17.6493 28.8733 18.5 29.6667 18.9627V23.3333C29.6667 24.0693 30.264 24.6667 31 24.6667C31.736 24.6667 32.3333 24.0693 32.3333 23.3333V18.9627C33.1267 18.5 33.6667 17.6493 33.6667 16.6667C33.6667 15.196 32.4707 14 31 14Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M44.3333 40.6665C44.096 40.6665 43.8707 40.7078 43.652 40.7665L41.276 38.3905C40.7547 37.8692 39.912 37.8692 39.3907 38.3905C38.8693 38.9118 38.8693 39.7545 39.3907 40.2758L41.7667 42.6518C41.708 42.8705 41.6667 43.0958 41.6667 43.3332C41.6667 44.8038 42.8627 45.9998 44.3333 45.9998C45.804 45.9998 47 44.8038 47 43.3332C47 41.8625 45.804 40.6665 44.3333 40.6665Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M17.6667 27.5334V38.6188L19.3093 36.9761C20.6093 35.6761 22.724 35.6761 24.0227 36.9761C25.3213 38.2761 25.3227 40.3908 24.0227 41.6894L22.9373 42.7748L29.6667 45.4668V32.3334L17.6667 27.5334Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M34.3333 20.6665V23.3332C34.3333 25.1705 32.8373 26.6665 31 26.6665C29.1627 26.6665 27.6667 25.1705 27.6667 23.3332V20.6665L17.6667 24.6665L31 29.9998L44.3333 24.6665L34.3333 20.6665Z"
-                            fill="#F2F4F7" />
-                        <path
-                            d="M37.976 41.6908C36.676 40.3908 36.676 38.2761 37.976 36.9774C39.276 35.6788 41.3907 35.6774 42.6893 36.9774L44.3333 38.6188V27.5334L32.3333 32.3334V45.4668L39.0613 42.7761L37.976 41.6908Z"
-                            fill="#F2F4F7" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <rect width="32" height="32" fill="white" transform="translate(15 14)" />
-                        </clipPath>
-                    </defs>
-                </svg>
+            <div class="item"><img src="img/3dm.png" alt="three dimension icon">
                 <h6>3D Modelling</h6>
             </div>
         </div>
     </div>
     <div class="credits">
-        <div class="cred"><svg width="68" height="68" viewBox="0 0 68 68" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="34" cy="34" r="34" fill="#F2F4F7" />
-                <g clip-path="url(#clip0)">
-                    <path
-                        d="M34 30.9143C37.003 30.9143 39.4375 28.4799 39.4375 25.4768C39.4375 22.4738 37.003 20.0393 34 20.0393C30.997 20.0393 28.5625 22.4738 28.5625 25.4768C28.5625 28.4799 30.997 30.9143 34 30.9143Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M45 30.9143C46.8985 30.9143 48.4375 29.3753 48.4375 27.4768C48.4375 25.5783 46.8985 24.0393 45 24.0393C43.1015 24.0393 41.5625 25.5783 41.5625 27.4768C41.5625 29.3753 43.1015 30.9143 45 30.9143Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M23 30.9143C24.8985 30.9143 26.4375 29.3753 26.4375 27.4768C26.4375 25.5783 24.8985 24.0393 23 24.0393C21.1015 24.0393 19.5625 25.5783 19.5625 27.4768C19.5625 29.3753 21.1015 30.9143 23 30.9143Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M26.3869 34.001C25.0338 32.8924 23.8083 33.0391 22.2438 33.0391C19.9038 33.0391 18 34.9316 18 37.2573V44.0829C18 45.0929 18.8244 45.9141 19.8381 45.9141C24.2148 45.9141 23.6875 45.9933 23.6875 45.7254C23.6875 40.8888 23.1146 37.3418 26.3869 34.001Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M35.4881 33.0641C32.7554 32.8362 30.3801 33.0667 28.3313 34.7579C24.9027 37.5041 25.5625 41.2018 25.5625 45.7254C25.5625 46.9222 26.5363 47.9141 27.7513 47.9141C40.9439 47.9141 41.4689 48.3397 42.2513 46.6072C42.5078 46.0214 42.4375 46.2075 42.4375 40.6029C42.4375 36.1512 38.5829 33.0641 35.4881 33.0641Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M45.7562 33.0392C44.1831 33.0392 42.9644 32.894 41.6131 34.0011C44.8609 37.3171 44.3125 40.622 44.3125 45.7255C44.3125 45.9951 43.8748 45.9142 48.0962 45.9142C49.1462 45.9142 50 45.0636 50 44.018V37.2574C50 34.9317 48.0962 33.0392 45.7562 33.0392Z"
-                        fill="#111F4D" />
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="32" height="32" fill="white" transform="translate(18 18)" />
-                    </clipPath>
-                </defs>
-            </svg>
+        <div class="cred"><img src="img/clients.png" alt="clients icon">
 
             <span>Happy Clients</span></div>
         <div class="cred"><svg width="68" height="68" viewBox="0 0 68 68" fill="none"
@@ -326,26 +270,7 @@
                 <path d="M40.625 30.546H38.7188V42.8759L40.625 43.5078V30.546Z" fill="#111F4D" />
             </svg>
             <span>Years of Experience</span></div>
-        <div class="cred"><svg width="68" height="68" viewBox="0 0 68 68" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="34" cy="34" r="34" fill="#F2F4F7" />
-                <g clip-path="url(#clip0)">
-                    <path
-                        d="M37.2302 41.8853C36.7929 41.8853 36.3619 41.8095 35.9488 41.6596L34.0123 40.9568L32.0767 41.6633C31.662 41.8146 31.2287 41.8913 30.789 41.8913C29.4551 41.8913 28.211 41.1733 27.5422 40.0174L27.5297 39.9956L27.536 48.1231C27.536 48.8239 27.9217 49.4609 28.5425 49.7857C28.8171 49.9293 29.1156 50.0003 29.4129 50.0003C29.7879 50.0003 30.1611 49.8873 30.4822 49.6645L33.9779 47.2378L37.4735 49.6645C38.0491 50.064 38.7924 50.1105 39.4132 49.7857C40.0341 49.4609 40.4198 48.8239 40.4198 48.1231V40.1071C39.7386 41.2069 38.5275 41.8853 37.2302 41.8853Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M44.4744 26.2085L42.3715 24.4472L41.8927 21.7462C41.7335 20.8485 40.9568 20.1975 40.0453 20.1975C40.0448 20.1975 40.0441 20.1975 40.0435 20.1975L37.3005 20.1999L35.1976 18.4389C34.4983 17.8531 33.4838 17.854 32.7855 18.441L30.6858 20.2061L27.9427 20.2087C27.0305 20.2096 26.254 20.8623 26.0964 21.7608L25.6225 24.4626L23.5229 26.2278C22.8246 26.8148 22.6493 27.8139 23.1062 28.6035L24.4799 30.9779L24.0061 33.6796C23.8484 34.5781 24.3564 35.4562 25.214 35.7674L27.7925 36.7033L29.1662 39.0776C29.5101 39.6718 30.1352 40.0149 30.7889 40.0149C31.0037 40.0149 31.2216 39.9778 31.4336 39.9005L34.0104 38.96L36.5889 39.8957C37.4463 40.2067 38.3993 39.8591 38.8547 39.0687L40.2241 36.6918L42.8009 35.7513C43.6578 35.4385 44.1642 34.5595 44.005 33.6613L43.5261 30.9603L44.8955 28.5834C45.3509 27.793 45.1738 26.7942 44.4744 26.2085ZM33.9998 34.6543C31.0168 34.6543 28.59 32.2275 28.59 29.2445C28.59 26.2615 31.0168 23.8347 33.9998 23.8347C36.9828 23.8347 39.4097 26.2615 39.4097 29.2445C39.4097 32.2275 36.9828 34.6543 33.9998 34.6543Z"
-                        fill="#111F4D" />
-                    <path
-                        d="M37.2712 30.5995C38.0186 28.7963 37.1628 26.7286 35.3596 25.9812C33.5564 25.2338 31.4887 26.0897 30.7412 27.8929C29.9938 29.6961 30.8497 31.7637 32.6529 32.5112C34.4561 33.2586 36.5238 32.4027 37.2712 30.5995Z"
-                        fill="#111F4D" />
-                </g>
-                <defs>
-                    <clipPath id="clip0">
-                        <rect width="32" height="32" fill="white" transform="translate(18 18)" />
-                    </clipPath>
-                </defs>
-            </svg>
+        <div class="cred"><img src="img/awards.png" alt="awards icon">
             <span>Awards Winning</span></div>
         <div class="cred"><svg width="68" height="68" viewBox="0 0 68 68" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -371,16 +296,39 @@
         <p>Have a glance at some selected works i am proud of, as i delivered solutions to branding and design pattern
             and design problems, with in-depth research, innovation and creativity.</p>
     </div>
-    <div class="portfolio">
-        <div class="sample"><img src="img\Rectangle 107.png" class="img-fluid" alt="">
+    <div class="portfolio blogBox moreBox">
+        <div class="sample"><a href="img\Rectangle 107.png"><img src="img\Rectangle 107.png" class="img-fluid"
+                    alt=""></a>
         </div>
-        <div class="sample"><img src="img\Rectangle 108.png" class="img-fluid" alt=""></div>
-        <div class="sample"><img src="img\Rectangle 109.png" class="img-fluid" alt=""></div>
-        <div class="sample"><img src="img\Rectangle 110.png" class="img-fluid" alt=""></div>
-        <div class="sample"><img src="img\Rectangle 112.png" class="img-fluid" alt=""></div>
-        <div class="sample"><img src="img\Rectangle 118.png" class="img-fluid" alt=""></div>
+        <div class="sample"><a href="img\Rectangle 108.png"><img src="img\Rectangle 108.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 109.png"><img src="img\Rectangle 109.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 110.png"><img src="img\Rectangle 110.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 112.png"><img src="img\Rectangle 112.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 118.png"><img src="img\Rectangle 118.png" class="img-fluid"
+                    alt=""></a></div>
     </div>
-    <button class="btn viewmore mx-auto d-block" style="margin-top: 24px;" type="button">View More</button>
+
+    <div class="portfolio  moreBox" style="display: none;">
+        <div class="sample"><a href="img\Rectangle 107.png"><img src="img\Rectangle 107.png" class="img-fluid"
+                    alt=""></a>
+        </div>
+        <div class="sample"><a href="img\Rectangle 108.png"><img src="img\Rectangle 108.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 109.png"><img src="img\Rectangle 109.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 110.png"><img src="img\Rectangle 110.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 112.png"><img src="img\Rectangle 112.png" class="img-fluid"
+                    alt=""></a></div>
+        <div class="sample"><a href="img\Rectangle 118.png"><img src="img\Rectangle 118.png" class="img-fluid"
+                    alt=""></a></div>
+    </div>
+    <button id="loadMore" class="btn viewmore mx-auto d-block" style="margin-top: 24px; width: 126px;" type="button"
+        onclick="view()">View More</button>
     <div id="clients">
         <div class="sectitle">
             <hr>
@@ -488,7 +436,7 @@
                     <input type="tel" class="inputstyle" id="phone" name="phone" placeholder="Phone">
                 </div>
                 <textarea rows="4" placeholder="Type Message"></textarea><br>
-                <button class="btn viewmore hero-btn" type="button">Send</button>
+                <input class="btn viewmore hero-btn" value="Send">
 
             </form>
         </div>
@@ -496,6 +444,23 @@
     <footer>
         <span>© Copyright 2020 RW Portfolio. All rights reserved.</span>
     </footer>
+    <!--jquery, popper.js, bootstrap.bundle.min.js(includes popper.js)-->
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!--jquery, popper.js, bootstrap.js-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js" defer></script>
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </body>
 
 </html>
